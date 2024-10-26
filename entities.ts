@@ -5,5 +5,16 @@ export interface Location {
     locationLatLng:number[];
     manager?:any;
     region?:any;
-    employees?:any[];
+    employees?:Employee[];
+}
+
+export interface Employee{
+    employeeId: string;
+    employeeName: string;
+    employeeLastName: string;
+    employeePhoneNumber:string;
+    employeeEmail:string;
+    employeePhoto?: string;
+    location?:Location;
+    user?: any;
 }

@@ -17,5 +17,5 @@ export default function LayoutDashboard({
                 {locations}
             </div>
         </div>
-    )
+    );
 }
