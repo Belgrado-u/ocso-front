@@ -1,6 +1,6 @@
 import { Button, Input } from "@nextui-org/react";
 import { createLocation } from "@/actions/locations/create";
-import { API_URL, TOKEN_NAME } from "@/constants";
+import { API_URL } from "@/constants";
 import SelectManager from "./SelectManager";
 import { authHeaders } from "@/helpers/authHeaders";
 import { Location, Manager } from "@/entities";

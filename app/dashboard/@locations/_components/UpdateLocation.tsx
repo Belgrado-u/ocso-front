@@ -1,13 +1,14 @@
 'use client';
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
 import { ReactNode } from "react";
+import { LuPenTool } from "react-icons/lu";
 
 export default function UpdateLocation({children}:{children:ReactNode}) {
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
   return (
     <>
-      <Button onPress={onOpen}>Open Modal</Button>
+      <Button onPress={onOpen} color="primary"><LuPenTool size="20"/></Button>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>
           {() => (
