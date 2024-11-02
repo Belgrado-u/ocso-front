@@ -5,7 +5,6 @@ import LocationCard from "./_components/LocationCard";
 import FormNewLocation from "./_components/FormNewLocation";
 import DeleteLocationButton from "./_components/DeleteLocationButton";
 import { authHeaders } from "@/helpers/authHeaders";
-import next from "next";
 import UpdateLocation from "./_components/UpdateLocation";
 import FormUpdateLocation  from "./_components/FormUpdateLocation";
 
