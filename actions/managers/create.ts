@@ -18,5 +18,4 @@ export default async function createManager (formData:FormData){
         },
     })
     if(response.status==201) revalidateTag("dashboard:managers")
-
 }
