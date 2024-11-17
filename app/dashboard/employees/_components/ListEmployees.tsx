@@ -39,7 +39,7 @@ export default function ListEmployees({
       <div className="flex flex-wrap gap-2">
       {employees
         .filter(
-          (employee: Employee) =>
+            (employee: Employee) =>
             {
             if (filter === "") return true;
               return String(employee.location?.locationId) === filter;

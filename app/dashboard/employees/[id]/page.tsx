@@ -1,7 +1,7 @@
 import { API_URL } from "@/constants";
 import { authHeaders } from "@/helpers/authHeaders";
 import { Employee } from "@/entities";
-//
+import FormUpdateEmployee from "./_components/FormUpdateEmployee";
 import EmployeeDataCard from "./_components/EmployeeDataCard";
 
 export default async function EmployeePage({
@@ -18,7 +18,7 @@ export default async function EmployeePage({
   return (
     <div className="w-full h-[90vh] flex flex-row items-center justify-center">
     <EmployeeDataCard employee={employee}/>
-//
+    <FormUpdateEmployee employee={employee} />
     </div>
   );
 }

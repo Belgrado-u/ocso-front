@@ -4,6 +4,7 @@ import { API_URL } from "@/constants";
 import { authHeaders } from "@/helpers/authHeaders";
 import { revalidateTag } from "next/cache";
 
+
 export default async function createEmployee(formData: FormData){
   formData.delete("$ACTION_REF_0")
   formData.delete("$ACTION_0:1")
@@ -15,7 +16,7 @@ export default async function createEmployee(formData: FormData){
     },
     body: formData,
   })
-  console.log(await response.json())
+  
   if (response.status === 201) revalidateTag("dashboard:employees");
   return;
 }
